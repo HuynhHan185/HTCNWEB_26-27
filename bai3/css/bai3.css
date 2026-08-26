@@ -1,1 +1,39 @@
+<style>
+  body {
+    margin: 0; /* Loại bỏ khoảng trắng mặc định của body */
+    padding: 0; /* Loại bỏ padding mặc định của body */
+  }
 
+  .navigation-icons, .thumbnail-container {
+    position: absolute; /* Để định vị tuyệt đối so với phần tử cha gần nhất có position: relative; hoặc body */
+    top: 0; /* Đặt phần tử lên trên cùng */
+    left: 0; /* Đặt phần tử sát bên trái */
+    display: flex; /* Để các biểu tượng/hình thu nhỏ nằm trên một hàng */
+    align-items: center; /* Căn chỉnh các mục theo chiều dọc ở giữa */
+    padding: 10px; /* Thêm một chút khoảng trắng xung quanh */
+    background-color: #f0f0f0; /* Màu nền tùy chọn để dễ nhìn */
+    z-index: 10; /* Đảm bảo chúng nằm trên các nội dung khác */
+  }
+
+  .thumbnail-container {
+    top: auto; /* Hủy bỏ thuộc tính top */
+    bottom: 0; /* Đặt phần tử xuống dưới cùng */
+    /* Có thể điều chỉnh top thay vì bottom tùy thuộc vào bố cục mong muốn */
+  }
+
+  .navigation-icons img, .thumbnail-container img {
+    height: 30px; /* Điều chỉnh kích thước biểu tượng/hình thu nhỏ */
+    margin-right: 10px; /* Thêm khoảng trắng giữa các biểu tượng/hình thu nhỏ */
+  }
+
+  /* Điều chỉnh khoảng cách nếu cần */
+  .navigation-icons a, .thumbnail-container a {
+    margin-right: 5px;
+  }
+
+  .main-content {
+    /* Điều chỉnh margin-top hoặc padding-top để tránh bị các biểu tượng che khuất */
+    padding-top: 60px; /* Ví dụ: đủ khoảng trống cho các biểu tượng */
+    text-align: center; /* Căn giữa nội dung chính */
+  }
+</style>
