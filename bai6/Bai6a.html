@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6a</title>
+    <style>
+        body {
+          background-color: #add8e6; /* Light blue giống hình */
+          font-family: Arial, sans-serif;
+        }
+    
+        h2, h3, p {
+          text-align: center;
+        }
+    
+        .logo {
+          background-color: #00ccff;
+          width: 300px;
+          border: 2px solid black;
+          padding: 10px;
+          margin: auto;
+        }
+    
+        table {
+          margin: auto;
+          background-color: #add8e6;
+        }
+    
+        input[type="text"], select, textarea {
+          width: 250px;
+          padding: 5px;
+          box-sizing: border-box;
+        }
+    
+        textarea {
+          width: 100%;
+        }
+    
+        .center-buttons {
+          text-align: center;
+          padding-top: 10px;
+        }
+    
+        td {
+          padding: 5px;
+          vertical-align: top;
+        }
+        form{
+            text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <form action="">
+<img style="text-align: center;" src="./img/logo.jpg" alt="">
+<h1> Registation Form </h1>
+<p>Register your Jackson Electronics product here</p>
 
+    <table align="center">
+        <tr>
+            <td>First Name:</td>
+            <td> <input type="text" name="firstname"></td>
+            <td> Last name:</td>
+            <td> <input type="text" name="lastname"></td>
+        </tr>
+        <tr>
+            <td>Addres #1:</td>
+            <td colspan="3"><input type="text" name="address1" size="34"></td>
+        </tr>
+        <tr>
+            <td>Addres #2:</td>
+            <td colspan="3"><input type="text" name="address1" size="34"></td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td><input type="text" name="city" size="19"></td>
+            <td>State:</td>
+            <td><input type="text" name="state" size="2"></td>
+            <td>Zip:</td>
+            <td><input type="text" name="zip" size="4"></td>
+        </tr>
+        <tr>
+            <td>Country: </td>
+            <td ><input type="text" name="country" size="19" ></td>
+        </tr>
+    </table>
+    <table align="center">
+    <hr>
+    <tr>
+        <td>Product:</td>
+        <td>
+            <select name="product">
+                <option value="">Scanmaster</option>
+                <option value="">PrintMax</option>
+                <option value="">CopyPro</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>product:</td>
+        <td><input type="text" name="product" size="19"></td>
+    </tr>
+    <tr>
+        <td>Serial#</td>
+        <td><input type="text" name="serial" size="19"></td>
+    </tr>
+    <tr>
+        <td>Used for:</td>
+          <td colspan="3">
+            <input type="radio" name="use" value="Home"> Home
+            <input type="radio" name="use" value="Business"> Business
+            <input type="radio" name="use" value="Government"> Government
+            <input type="radio" name="use" value="Educational"> Educational Institution
+            <input type="radio" name="use" value="Other"> Other
+          </td>
+    </tr>
+    <tr>
+        <td>System:</td>
+        <td colspan="3">
+          <input type="checkbox" name="system" value="Windows"> Windows
+          <input type="checkbox" name="system" value="Macintosh"> Macintosh
+          <input type="checkbox" name="system" value="UNIX"> UNIX
+          <input type="checkbox" name="system" value="Other"> Other
+        </td>
+      </tr>
+</table>
+<hr>
+<table align="center">
+     <tr>
+          <td>Comments?</td>
+          <td colspan="3">
+            <textarea name="comments" rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center">
+            <input type="submit" value="Click to register">
+            <input type="reset" value="Click to cancel">
+          </td>
+        </tr>
+</table>
+</form>
+</body>
+</html>
